@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="map">
+        <!-- Map goes here -->
+      </div>
+      <nav id="sidebar" >
+        <button type="button" id="sidebar-toggle" class="btn">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <input id="search-box" type="text" data-bind="value: searchInput, valueUpdate: 'keyup'">
+        <ul data-bind="foreach: filteredItems">
+  				<li data-bind="text: title, click: listClicked"></li>
+  			</ul>
+        <p>Powered by Foursquare</p>
+      </nav>
+
+    </div>
+    <script src="js/lib/jquery-3.1.0.min.js"></script>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/locations.js" charset="utf-8"></script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBebk9Y71UREa0DtUb9zxwjH4i9vaJDIEM&v=3&callback=initMap"
+        onerror="googleMapError()">
+    </script>
+  </body>
+
+</html>
