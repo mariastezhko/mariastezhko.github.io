@@ -2,6 +2,8 @@
 
 - - - -
 
+![alt map](https://raw.githubusercontent.com/mariastezhko/Neighborhood-Map/master/img/map1.png)
+
 ## Description
 
 `Neighborhood Map` is a single page JavaScript application featuring a map of the neighborhood with highlighted locations, third-party data about those locations and various ways to browse the content.
@@ -13,6 +15,8 @@ Key features of `Neighborhood Map` include:
 - Usage of Knockout Framework for data binding
 - Implementation of AJAX requests to third-party servers
 - Responsive design
+
+[Live version](https://mariastezhko.github.io)
 
 ## Installation and Usage Instructions
 
