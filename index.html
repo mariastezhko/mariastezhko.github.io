@@ -1,39 +1,598 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <title>Neighborhood Map</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
   </head>
 
-  <body>
-    <div class="wrapper">
-      <div id="map">
-        <!-- Map goes here -->
-      </div>
-      <nav id="sidebar" >
-        <button type="button" id="sidebar-toggle" class="btn">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Maria Stezhko</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
         </button>
-        <input id="search-box" type="text" data-bind="value: searchInput, valueUpdate: 'keyup'">
-        <ul data-bind="foreach: filteredItems">
-  				<li data-bind="text: title, click: listClicked"></li>
-  			</ul>
-        <p>Powered by Foursquare</p>
-      </nav>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <!--<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Maria Stezhko</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+
+          <div class="intro-heading text-uppercase">Maria Stezhko</div>
+          <div class="intro-lead-in">Full Stack Web Developer</div>
+          <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>-->
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About me</h2>
+
+            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+
+
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/meLinkedin.jpg" alt="">
+                </div>
+              </li>
+            </ul>
+
+            <p class="text-muted">I’m a full stack software engineer, driven to deliver high-quality, scalable, user-friendly applications. My past experience working as an artist, combined with the formal education in computer science, makes me confident in designing creative, detail-oriented solutions, as well as adopting new skills and technologies.</p>
+            <div class="team-member">
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="mailto:stezhko@gmail.com">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/maria-stezhko/" target="_blank">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/mariastezhko" target="_blank">
+                      <i class="fa fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/artportfolio-sm.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Art Portfolio</h4>
+              <p class="text-muted">Python/Flask Application</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/ufo-sm.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Flying Saucer</h4>
+              <p class="text-muted">Augmented Reality iOS App</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/map1-sm.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Neighborhood Map</h4>
+              <p class="text-muted">JavaScript Application</p>
+            </div>
+          </div>
+
+          <!--<div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/pick-a-picture-sm.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Pick a Picture</h4>
+              <p class="text-muted">Python/Django Application</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/petlocator-sm.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Pet Locator</h4>
+              <p class="text-muted">Angular Application</p>
+            </div>
+          </div>-->
+          <!--<div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Window</h4>
+              <p class="text-muted">Photography</p>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">SKILLS</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+      							<div class="container">
+      			            <div class="row">
+      			                <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Languages</h3>
+      			                        <ul>
+      			                          <li class="text-muted hideme">JavaScript</li>
+      																<li class="text-muted hideme">TypeScript</li>
+      			                          <li class="text-muted">Python</li>
+      			                          <li class="text-muted">Swift</li>
+      			                        	<li class="text-muted">HTML</li>
+      																<li class="text-muted">CSS</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>
+      			                <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Front End</h3>
+      			                        <ul>
+                                      <li class="text-muted">Angular</li>
+                                      <li class="text-muted">jQuery</li>
+      			                          <li class="text-muted">Bootstrap</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>
+                            <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Back End</h3>
+      			                        <ul>
+      			                          <li class="text-muted">Django</li>
+      																<li class="text-muted">Flask</li>
+      			                          <li class="text-muted">Node.js</li>
+      			                      		<li class="text-muted hideme">Express.js</li>
+
+      			                        </ul>
+      			                    </div>
+      			                </div>
+                            <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Databases</h3>
+      			                        <ul>
+      			                          <li class="text-muted">MySQL</li>
+      			                          <li class="text-muted">PostgreSQL</li>
+      			                          <li class="text-muted">SQLite</li>
+      			                          <li class="text-muted">MongoDB</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>
+      			                <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Methodology</h3>
+      			                        <ul>
+      			                          <li class="text-muted">OOP</li>
+      			                          <li class="text-muted">MVC</li>
+      			                          <li class="text-muted">REST</li>
+                                      <li class="text-muted">Agile</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>
+
+      			                <!--<div class="col-lg-2  text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">OS</h3>
+      			                        <ul>
+      			                          <li class="text-muted">Linux</li>
+      			                          <li class="text-muted">iOS</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>-->
+      			                <div class="col-lg-2 col-md-4 text-left hideme">
+      			                    <div class="service-box hideme">
+      			                        <h3 class="service-heading">Other</h3>
+      			                        <ul>
+      			                          <li class="text-muted">Responsive Design</li>
+
+      			                          <li class="text-muted">Ajax</li>
+      			                          <li class="text-muted">Git/GitHub</li>
+                                      <li class="text-muted">Linux</li>
+                                      <li class="text-muted">iOS</li>
+      			                          <li class="text-muted">Xcode</li>
+      			                          <li class="text-muted">AWS</li>
+      			                        </ul>
+      			                    </div>
+      			                </div>
+      			            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact me</h2>
+            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <a href="mailto:stezhko@gmail.com"><i class="fa fa-circle fa-stack-2x text-primary"></i></a>
+              <a href="mailto:stezhko@gmail.com"><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a>
+            </span>
+            <h4 class="service-heading">EMAIL</h4>
+            <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <a href="https://www.linkedin.com/in/maria-stezhko/" target="_blank"><i class="fa fa-circle fa-stack-2x text-primary"></i></a>
+              <a href="https://www.linkedin.com/in/maria-stezhko/" target="_blank"><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a>
+            </span>
+            <h4 class="service-heading">LINKEDIN</h4>
+            <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <a href="https://github.com/mariastezhko" target="_blank"><i class="fa fa-circle fa-stack-2x text-primary"></i></a>
+              <a href="https://github.com/mariastezhko" target="_blank"><i class="fa fa-github fa-stack-1x fa-inverse"></i></a>
+            </span>
+            <h4 class="service-heading">GITHUB</h4>
+            <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright text-center">Copyright &copy; Maria Stezhko 2018</span>
+          </div>
+
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Neighborhood Map</h2>
+                  <p class="item-intro text-muted">Technologies used: JavaScript, Knockout.js, AJAX, HTML, CSS, Responsive design, Google Maps API, Foursquare API</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/map1.png" alt="">
+                  <p>Neighborhood Map is a single page JavaScript application featuring a map of the neighborhood with highlighted locations, third-party data about those locations and various ways to browse the content.</p>
+
+                  <p>
+                      Website : <a href="https://mariastezhko.github.io/Neighborhood-Map/" target="_blank">Neighborhood Map</a> <br>
+                      Source Code: <a href="https://github.com/mariastezhko/Neighborhood-Map" target="_blank">GitHub</a>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/lib/jquery-3.1.0.min.js"></script>
-    <script src="js/lib/knockout-3.4.2.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/locations.js" charset="utf-8"></script>
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBebk9Y71UREa0DtUb9zxwjH4i9vaJDIEM&v=3&callback=initMap"
-        onerror="googleMapError()">
-    </script>
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Flying Saucer</h2>
+                  <p class="item-intro text-muted">Technologies used: iOS, Xcode, ARKit, Swift</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/ufo-md.png" alt="">
+                  <p>Flying Saucer is an Augmented Reality iOS Application. Fully controllable 3D object can rotate and move in all directions. Key features of the project also include sound effects.</p>
+                  <p>
+                      Source Code: <a href="https://github.com/mariastezhko/flying-saucer" target="_blank">GitHub</a>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Pick a Picture</h2>
+                  <p class="item-intro text-muted">Technologies used: Python, Django, SQLite3, jQuery, HTML, CSS</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/pick-a-picture-md.png" alt="">
+                  <p>This full stack Python application is a logic game for kids. Each time the button is clicked, four pictures are randomly selected from the database in a way that one of them doesn't belong to the set, based on some criteria. The criteria is also selected randomly each time. The goal of the game is to pick the correct picture.</p>
+                  <p>This project won a Coding Dojo hackathon in nomination "Implementation of Technology".<p>
+                  <p>
+                      Website : <a href="http://18.221.81.177" target="_blank">Pick a Picture</a> <br>
+                      Source Code: <a href="https://github.com/mariastezhko/Pick-a-Picture" target="_blank">GitHub</a>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Art Portfolio</h2>
+                  <p class="item-intro text-muted">Technologies used: Python, Flask, PostgreSQL, Google OAuth 2.0, JavaScript, Jinja, JSON, HTML, CSS</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/artportfolio-md.png" alt="">
+                  <p>Art Portfolio is a full stack Python application that provides a list of items within a variety of categories. Art Portfolio utilizes Google OAuth authentication. Registered users have the ability to post, edit and delete their own items.</p>
+                  <p>
+                      Website : <a href="http://ec2-34-218-30-13.us-west-2.compute.amazonaws.com/" target="_blank">Art Portfolio</a> <br>
+                      Source Code: <a href="https://github.com/mariastezhko/Art-Portfolio-App" target="_blank">GitHub</a>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Pet Locator</h2>
+                  <p class="item-intro text-muted">Technologies used: Angular, Node.js, Express.js, MongoDB, TypeScript, AJAX, JSON, HTML, CSS, Google Maps APIs, Petfinder.com APIs</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/petlocator-md.png" alt="">
+                  <p>Pet Locator is a single page Angular application helping to find adoptable pets in the area.</p>
+                  <p>
+                      Source Code: <a href="https://github.com/mariastezhko/pet-locator" target="_blank">GitHub</a>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
   </body>
 
 </html>
