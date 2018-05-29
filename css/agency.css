@@ -445,7 +445,7 @@ header.masthead .intro-text .intro-heading {
   left: 0;
   width: 80px;
   height: 80px;
-  margin-left: 0;
+  margin-left: 0px;
   /*text-align: center;*/
   color: white;
   border: 7px solid #e9ecef;
@@ -480,7 +480,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .timeline > li:last-child {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 .timeline .timeline-heading h4 {
@@ -498,6 +498,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+
+  .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+
   .timeline:before {
     left: 50%;
   }
@@ -530,6 +535,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 992px) {
+
+  .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+
   .timeline > li {
     min-height: 150px;
   }
@@ -552,6 +562,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 1200px) {
+
+  .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+
   .timeline > li {
     min-height: 170px;
   }
